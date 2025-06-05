@@ -2,13 +2,13 @@
 pragma solidity ^0.8.13;
 
 contract Counter {
+    error CannotDecrementBelowZero();
+
     uint256 public number;
 
-    function setNumber(uint256 newNumber) public {
-        number = newNumber;
-    }
+    function setNumber(uint256 newNumber) public {}
 
-    function increment() public {
-        number++;
-    }
+    function increment() public {}
+
+    function decrement() public {}
 }
